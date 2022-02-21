@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <title>Aswinkl71</title>
+</head>
+<div class="wrapper">
+    <h3  class="typing-demo" >Hello iam aswin........</h3>
+   
+</div>
+
+<body>
+    <main>
+        <div id="counter" style="background-color: aqua;
+        color: rgb(0, 0, 0);
+        padding: 0.5rem 1rem;
+        border: 4px   solid #d3a34a;
+        border-radius: 3.5rem;
+        margin-left: 1.5rem;"
+        >
+
+          0
+        </div>
+        <div class="button">
+            <button id="increment">Up</button>
+            <button id="reset">Reset</button>
+            <button id="dencrement">Down</button>
+        </div>
+
+       
+
+        
+        
+    </main>
+
+    
+
+
+   <script>
+       const counter = document.getElementById('counter')
+       const incrementBtn = document.getElementById('increment')
+       const resetBtn = document.getElementById('reset')
+       const dencrementBtn = document.getElementById('dencrement')
+       let counterValue = 0
+       incrementBtn.addEventListener('click',function(event){
+           counterValue += 1
+     counter.innerHTML= counterValue;
+       })
+
+       dencrementBtn.addEventListener('click',function(event){
+           counterValue -= 1
+           counter.innerHTML= counterValue;
+       })
+
+       resetBtn.addEventListener('click',function(event){
+           counterValue = 0
+           counter.innerHTML= counterValue;
+       })
+
+
+
+      
+
+
+
+   </script>
+</body>
+</html>
